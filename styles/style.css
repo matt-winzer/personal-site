@@ -1,11 +1,13 @@
+/*HEADER NAVBAR*/
+
 .logo-lotus {
-  height: 12.5vh;
-  margin-top: .75em;
-  margin-left: 1.2em;
-  margin-right: 1.2em;
+  height: 6em;
+  margin-top: 1em;
+  margin-left: 1.25em;
+  margin-right: 1.25em;
   margin-bottom: 1em;
 
-  -webkit-animation-name: spin;
+  /*-webkit-animation-name: spin;
   -webkit-animation-duration: 5000ms;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
@@ -21,18 +23,46 @@
   animation-name: spin;
   animation-duration: 10000ms;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: linear;*/
 }
 
 .logo-container {
   background-color: black;
-  position: fixed;
+  position: absolute;
+  display: inline-block;
   top: 0;
   left: 50%;
-  margin-left: -6.25vh;
+  margin-left: -4.25em;
   border-radius: 50%;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
+
+.splash-hero {
+  background-image: url('../assets/ngc-hubble.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 95vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.splash-hero-2 {
+  background-image: url('../assets/nebula.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
 
 @-ms-keyframes spin {
     from { -ms-transform: rotate(0deg); }
