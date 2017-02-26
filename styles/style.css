@@ -1,4 +1,11 @@
-/*HEADER NAVBAR*/
+/* ------------------ HEADER ------------------ */
+
+.nav-wrapper {
+  height: 8vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
 
 .logo-lotus {
   height: 6em;
@@ -34,6 +41,29 @@
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
 
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(359deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(359deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(359deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(359deg);
+    }
+}
+
+/* ------------------ BODY ------------------ */
+
 .splash-hero {
   background-image: url('../assets/ngc-hubble.jpg');
   background-attachment: fixed;
@@ -56,6 +86,8 @@
   align-items: center;
 }*/
 
+
+
 .splash-hero-2 {
   background-image: url('../assets/nebula.jpg');
   background-attachment: fixed;
@@ -70,36 +102,15 @@
 }
 
 
-/* ------ FOOTER ------ */
+/* ------------------ FOOTER ------------------ */
 
 footer {
   margin: 0;
-  height: 10vh;
+  height: 8vh;
   text-align: center;
   color: white;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@-ms-keyframes spin {
-    from { -ms-transform: rotate(0deg); }
-    to { -ms-transform: rotate(359deg); }
-}
-@-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(359deg); }
-}
-@-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(359deg); }
-}
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(359deg);
-    }
 }
