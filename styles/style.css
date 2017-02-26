@@ -2,12 +2,9 @@
 
 .logo-lotus {
   height: 6em;
-  margin-top: 1em;
-  margin-left: 1.25em;
-  margin-right: 1.25em;
-  margin-bottom: 1em;
+  margin: 1em 1.25em;
 
-  /*-webkit-animation-name: spin;
+  -webkit-animation-name: spin;
   -webkit-animation-duration: 5000ms;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
@@ -23,7 +20,7 @@
   animation-name: spin;
   animation-duration: 10000ms;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;*/
+  animation-timing-function: linear;
 }
 
 .logo-container {
@@ -44,11 +41,20 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  height: 95vh;
+  height: 92vh;
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+/*.one, .two, .three {
+  height: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
 
 .splash-hero-2 {
   background-image: url('../assets/nebula.jpg');
@@ -63,6 +69,19 @@
   flex-direction: column;
 }
 
+
+/* ------ FOOTER ------ */
+
+footer {
+  margin: 0;
+  height: 10vh;
+  text-align: center;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @-ms-keyframes spin {
     from { -ms-transform: rotate(0deg); }
