@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* ------------------ HEADER ------------------ */
 
 .nav-wrapper {
@@ -36,7 +40,7 @@
   display: inline-block;
   top: 0;
   left: 50%;
-  margin-left: -4.25em;
+  margin-left: -4.5em;
   border-radius: 50%;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
@@ -64,6 +68,10 @@
 
 /* ------------------ BODY ------------------ */
 
+body {
+  line-height: 1.5;
+}
+
 .splash-hero {
   background-image: url('../assets/ngc-hubble.jpg');
   background-attachment: fixed;
@@ -77,6 +85,69 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.splash-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  color: #386797;
+  /*background-color: rgba(56, 103, 151, 0.6);*/
+  /*background-color: rgba(241, 20, 3, 0.3);*/
+  background-color: rgba(0, 0, 0, 0.7);
+  /*border: 1px solid red;*/
+  padding: 2.5em;
+  margin-top: -2em;
+}
+
+.splash-header h1 {
+  font-size: 4em;
+  /*margin-top: -2em;*/
+  /*margin-bottom: .5em;*/
+  text-align: center;
+
+}
+
+.splash-header h2 {
+  font-size: 2em;
+}
+
+.about-content {
+  /*height: 50vh;*/
+  background-color: black;
+  display: flex;
+  /*align-items: center;*/
+  font-size: 1.25em;
+  color: #386797; /* ----- Blue from logo ----- */
+  font-size: 1.25em;
+}
+
+.logo-container-2 {
+  border-radius: 50%;
+  background-color: black;
+  display: inline-block;
+  /*border: 1px solid red;*/
+}
+
+.about-1 {
+  padding: 1.5em;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-2 {
+  padding: 1.5em;
+  width: 40%;
+}
+
+.about-3 {
+  padding: 1.5em;
+  width: 40%;
 }
 
 /*.one, .two, .three {
@@ -101,6 +172,9 @@
   flex-direction: column;
 }
 
+.section-2 {
+  order: 2;
+}
 
 /* ------------------ FOOTER ------------------ */
 
@@ -113,4 +187,17 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* ------------------ MEDIA QUERIES ------------------ */
+
+@media (max-width: 700px) {
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-1, .about-2, .about-3 {
+    width: 100%;
+  }
 }
