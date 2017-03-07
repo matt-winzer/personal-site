@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+body {
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+}
+
 /* ------------------ HEADER ------------------ */
 
 .nav-wrapper {
@@ -66,11 +71,7 @@
     }
 }
 
-/* ------------------ BODY ------------------ */
-
-body {
-  line-height: 1.5;
-}
+/* ------------------ MAIN ------------------ */
 
 .splash-hero {
   background-image: url('../assets/ngc-hubble.jpg');
@@ -191,7 +192,7 @@ footer {
 
 /* ------------------ MEDIA QUERIES ------------------ */
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
 
   .about-content {
     flex-direction: column;
