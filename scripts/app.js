@@ -1,10 +1,10 @@
 $(document).ready(function() {
   console.log('hello');
-  $(window).scroll(function () {
-    $('.splash-header').each(fadeAnimations);
-    $('.about').each(fadeAnimations);
-    $('.project-card').each(slideAnimations);
-  });
+  // $(window).scroll(function () {
+  //   $('.splash-header').each(fadeAnimations);
+  //   $('.about').each(fadeAnimations);
+  //   $('.project-card').each(slideAnimations);
+  // });
 
 
 });
