@@ -6,6 +6,17 @@ $(document).ready(function() {
   //   $('.project-card').each(slideAnimations);
   // });
 
+  // Initialize ScrollReveal
+  window.sr = ScrollReveal({
+    reset: true,
+    duration: 1000,
+    distance: '50px'
+  });
+
+  // ScrollReveal Events
+  sr.reveal('.splash-header');
+  sr.reveal('.about');
+  sr.reveal('.project-card');
 
 });
 
